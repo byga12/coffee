@@ -56,7 +56,17 @@ const Home = () => {
           </section>
           <section className={s.stores}>
             <h2 className={s.stores_title}>Mapa de nuestras sucursales</h2>
-            <LeafletMap center={[-34.6077, -58.4714]} />
+            <LeafletMap
+              center={[-34.6077, -58.4714]}
+              markers={[
+                [-34.6071, -58.4401],
+                [-34.62867, -58.4905],
+                [-34.59755, -58.38435],
+                [-38.02472, -57.53958],
+                [-34.70184, -58.36446],
+                [-34.7497, -58.4027],
+              ]}
+            />
           </section>
         </div>
       </Layout>
