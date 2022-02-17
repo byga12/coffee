@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ProductsContext } from "../../context/ProductsContext";
 import ProductsList from "../ProductsList/ProductsList";
 import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
@@ -8,13 +9,21 @@ import FormLabel from "@mui/material/FormLabel";
 import s from "./ProductsListWithSorting.module.css";
 
 const ProductsListWithSorting = () => {
-  const getFunction = (fn) => {
-    return fn;
-  };
+  const { products, setProducts } = useContext(ProductsContext);
+
   const handleChange = (e) => {
-    console.log(e.target.value);
-    console.log(getFunction);
-    // receiveFromChild()({});
+    let sortedProducts;
+    if (e.target.value === "name") {
+      sortedProducts = [...products].sort((productA, productB) => {
+        return productA.title.localeCompare(productB.title);
+      });
+    }
+    if (e.target.value === "price") {
+      sortedProducts = [...products].sort((productA, productB) => {
+        return productA.price - productB.price;
+      });
+    }
+    setProducts(sortedProducts);
   };
 
   return (
@@ -33,7 +42,6 @@ const ProductsListWithSorting = () => {
         </FormLabel>
         <RadioGroup
           aria-labelledby="demo-radio-buttons-group-label"
-          defaultValue="name"
           name="radio-buttons-group"
           onChange={(e) => handleChange(e)}
         >
@@ -49,7 +57,7 @@ const ProductsListWithSorting = () => {
           />
         </RadioGroup>
       </FormControl>
-      <ProductsList getFunction={getFunction} />
+      <ProductsList />
     </div>
   );
 };

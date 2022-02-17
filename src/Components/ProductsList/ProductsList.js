@@ -1,21 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext } from "react";
 import ProductCard from "../ProductCard/ProductCard";
-import axios from "axios";
 import s from "./ProductsList.module.css";
 
-const ProductsList = ({ getFunction }) => {
-  const [products, setProducts] = useState([]);
+import { ProductsContext } from "../../context/ProductsContext";
 
-  getFunction(setProducts);
-  useEffect(() => {
-    try {
-      axios
-        .get("https://api.sampleapis.com/coffee/hot")
-        .then((res) => setProducts(res.data));
-    } catch (e) {
-      console.log(e);
-    }
-  }, []);
+const ProductsList = () => {
+  const { products } = useContext(ProductsContext);
 
   return (
     <div className={s.grid_container}>
@@ -25,6 +15,7 @@ const ProductsList = ({ getFunction }) => {
             key={product.id}
             title={product.title}
             description={product.description}
+            price={product.price}
             ingredients={product.ingredients}
           />
         ))}
