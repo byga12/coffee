@@ -1,4 +1,4 @@
-import Button from "../../Components/Button/Button";
+import Button from "../../Button/Button";
 import s from "./About.module.css";
 import logo from "./devffee_logo.png";
 

@@ -9,7 +9,7 @@ const LeafletMap = ({ center, markers }) => {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       {markers.map((position) => (
-        <Marker position={position}></Marker>
+        <Marker key={position} position={position}></Marker>
       ))}
     </MapContainer>
   );
