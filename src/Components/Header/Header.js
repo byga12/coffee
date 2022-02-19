@@ -49,7 +49,7 @@ const Header = () => {
   };
 
   return (
-    <AppBar sx={{background:"#EDE7E2" }}position="absolute">
+    <AppBar sx={{background:"#DFD2C6" }}position="absolute">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <img src={logo} height="90px" alt='logo'></img>
