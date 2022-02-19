@@ -2,10 +2,10 @@ import s from "./Home.module.css";
 import Layout from "../Layout";
 import Button from "../../Button/Button";
 import LeafletMap from "../../LeafletMap/LeafletMap";
-import hero from "./hero.png";
-import coffees from "./coffees.png";
-import story from "./story.png";
-import franchise from "./franchise.png";
+import hero from "./../../../assets/hero.png";
+import coffees from "./../../../assets/coffees.png";
+import story from "./../../../assets/story.png";
+import franchise from "./../../../assets/franchise.png";
 
 const Home = () => {
   return (

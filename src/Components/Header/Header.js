@@ -9,6 +9,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
+import logo from "./../../assets/devffee_logo.png";
 
 const links = [
   {
@@ -48,18 +49,10 @@ const Header = () => {
   };
 
   return (
-    <AppBar position="absolute">
+    <AppBar sx={{background:"#EDE7E2" }}position="absolute">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
-          >
-            LOGO
-          </Typography>
-
+          <img src={logo} height="90px" alt='logo'></img>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -86,30 +79,25 @@ const Header = () => {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
+               
                 display: { xs: "block", md: "none" },
+                
               }}
             >
               {links.map((link) => (
-                <MenuItem key={link.name} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{link.name}</Typography>
+                <MenuItem    key={link.name} onClick={handleCloseNavMenu}>
+                  <Typography sx={{color:"#8E7560"}}textAlign="center">{link.name}</Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
-          >
-            LOGO
-          </Typography>
+   
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {links.map((link) => (
               <Button
                 key={link.name}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2, color: "#8E7560", display: "block" }}
               >
                 {link.name}
               </Button>
