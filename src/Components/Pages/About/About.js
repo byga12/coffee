@@ -1,6 +1,6 @@
 import Button from "../../Button/Button";
 import s from "./About.module.css";
-import logo from "./devffee_logo.png";
+import logo from "./../../../assets/devffee_logo.png";
 
 const About = () => {
   return (
