@@ -1,5 +1,4 @@
 import s from "./Home.module.css";
-import Layout from "../Layout";
 import Button from "../../Button/Button";
 import LeafletMap from "../../LeafletMap/LeafletMap";
 import hero from "./../../../assets/hero.png";
@@ -10,7 +9,6 @@ import franchise from "./../../../assets/franchise.png";
 const Home = () => {
   return (
     <div>
-      <Layout>
         <main className={s.hero}>
           <img className={s.hero_image} src={hero} alt="coffee beans" />
           <h2 className={s.hero_title}>Desde 2022</h2>
@@ -69,7 +67,6 @@ const Home = () => {
             />
           </section>
         </div>
-      </Layout>
     </div>
   );
 };
