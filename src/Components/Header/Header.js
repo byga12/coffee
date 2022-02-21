@@ -49,10 +49,10 @@ const Header = () => {
   };
 
   return (
-    <AppBar sx={{background:"#DFD2C6" }}position="absolute">
+    <AppBar sx={{ background: "#DFD2C6", position: "relative" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <img src={logo} height="90px" alt='logo'></img>
+          <img src={logo} height="90px" alt="logo"></img>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -79,19 +79,19 @@ const Header = () => {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-               
                 display: { xs: "block", md: "none" },
-                
               }}
             >
               {links.map((link) => (
-                <MenuItem    key={link.name} onClick={handleCloseNavMenu}>
-                  <Typography sx={{color:"#8E7560"}}textAlign="center">{link.name}</Typography>
+                <MenuItem key={link.name} onClick={handleCloseNavMenu}>
+                  <Typography sx={{ color: "#8E7560" }} textAlign="center">
+                    {link.name}
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
-   
+
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {links.map((link) => (
               <Button
