@@ -8,12 +8,8 @@ const ProductsContextData = ({ children }) => {
 
   useEffect(() => {
     try {
-      axios.get("https://api.sampleapis.com/coffee/hot").then((res) => {
-        const list = res.data.map((product) => ({
-          ...product,
-          price: (Math.random() * 20).toFixed(2),
-        }));
-        setProducts(list);
+      axios.get("http://localhost:5000/coffees/").then((res) => {
+        setProducts(res.data);
       });
     } catch (e) {
       console.log(e);

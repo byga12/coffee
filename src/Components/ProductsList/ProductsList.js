@@ -12,8 +12,9 @@ const ProductsList = () => {
       {products.length > 0 &&
         products.map((product) => (
           <ProductCard
-            key={product.id}
-            title={product.title}
+            key={product._id}
+            name={product.name}
+            imageUrl={product.imageUrl}
             description={product.description}
             price={product.price}
             ingredients={product.ingredients}

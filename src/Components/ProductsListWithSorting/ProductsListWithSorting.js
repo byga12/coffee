@@ -15,7 +15,7 @@ const ProductsListWithSorting = () => {
     let sortedProducts;
     if (e.target.value === "name") {
       sortedProducts = [...products].sort((productA, productB) => {
-        return productA.title.localeCompare(productB.title);
+        return productA.name.localeCompare(productB.name);
       });
     }
     if (e.target.value === "price") {

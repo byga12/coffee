@@ -1,19 +1,19 @@
 import React from "react";
-import sampleImg from "./../../assets/sample.png";
+// import sampleImg from "./../../assets/sample.png";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 
-const ProductCard = ({ title, description, ingredients, price }) => {
+const ProductCard = ({ name, imageUrl, description, ingredients, price }) => {
   return (
     <Card sx={{ width: 200, backgroundColor: "#EFEFEF" }}>
       <CardActionArea>
         <CardMedia
           component="img"
           height="140"
-          image={sampleImg}
+          image={imageUrl}
           alt="green iguana"
         />
         <CardContent>
@@ -25,7 +25,7 @@ const ProductCard = ({ title, description, ingredients, price }) => {
               color: "#46382E",
             }}
           >
-            {title}
+            {name}
           </Typography>
           <Typography
             variant="h5"
