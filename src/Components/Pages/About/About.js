@@ -1,9 +1,12 @@
 import Button from "../../Button/Button";
 import s from "./About.module.css";
 import logo from "./../../../assets/devffee_logo.png";
+import Title from '../../Title/Title';
+import photo from '../../../assets/granos-de-cafe-1.jpg'
 
 const About = () => {
-  return (
+  return (<div>
+    <Title imageUrl={photo} titleText='Nosotros'/>
     <div className={s.container}>
       <div className={s.aboutus}>
         <section className={s.first_section}>
@@ -31,6 +34,7 @@ const About = () => {
           <Button href="/stores" text="Ver sucursales" />
         </div>
       </div>
+    </div>
     </div>
   );
 };
