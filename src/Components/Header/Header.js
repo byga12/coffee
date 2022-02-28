@@ -36,6 +36,8 @@ const links = [
     name: "Franquicias",
     path: "/franchises",
   },
+
+
 ];
 
 const Header = () => {
@@ -84,7 +86,7 @@ const Header = () => {
             >
               {links.map((link) => (
                 <MenuItem key={link.name} onClick={handleCloseNavMenu}>
-                  <Typography sx={{ color: "#8E7560" }} textAlign="center">
+                  <Typography sx={{ color: "#8E7560" }} textAlign="center" href={link.path}>
                     {link.name}
                   </Typography>
                 </MenuItem>
@@ -96,8 +98,10 @@ const Header = () => {
             {links.map((link) => (
               <Button
                 key={link.name}
+                href={link.path}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "#8E7560", display: "block" }}
+                sx={{ my: 2, color: "#8E7560", display: "block" }
+                }
               >
                 {link.name}
               </Button>
