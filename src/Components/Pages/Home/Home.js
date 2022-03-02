@@ -43,7 +43,7 @@ const Home = () => {
             <div>
               <Button
                 text={"Conoce nuestras instalaciones"}
-                href={"/franchise"}
+                href={"/franchises"}
               />
             </div>
             <img

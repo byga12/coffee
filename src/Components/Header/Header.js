@@ -26,7 +26,7 @@ const links = [
   },
   {
     name: "Sucursales",
-    path: "/sucursales",
+    path: "/store",
   },
   {
     name: "Contacto",

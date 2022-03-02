@@ -4,7 +4,7 @@ import photo from '../../../assets/granos-de-cafe-1.jpg'
 import ImagenSlider from '../../ImagenSlider/ImagenSlider';
 import { SliderData } from '../../ImagenSlider/SliderData';
 import s from "../About/About.module.css";
-
+import { FaStore } from "react-icons/fa";
 
 
 const Sucursales = () => {
@@ -20,19 +20,19 @@ const Sucursales = () => {
         </section>
         <ul>
           <li>CABA  </li>
-                <ul>Obeliso - calle : le noris    4394</ul>
-                <ul>Floresta - calle: Hector ludeña 023</ul>
-                <ul>Caballito - calle los nogales 5438</ul>
+          <ul><FaStore/>  Obeliso - calle : le noris    4394</ul>
+                <ul><FaStore/>  Floresta - calle: Hector ludeña 023</ul>
+                <ul><FaStore/>  Caballito - calle los nogales 5438</ul>
           <li>Buenos Aires</li>
-                <ul>Mar Del Plata - Calle : le noris    4394</ul>
-                <ul>Lomas de Zamora - calle: Hector ludeña 023</ul>
-                <ul>Lanus - calle los nogales 5438</ul> 
+                <ul><FaStore/>  Mar Del Plata - Calle : le noris    4394</ul>
+                <ul><FaStore/>  Lomas de Zamora - calle: Hector ludeña 023</ul>
+                <ul><FaStore/>  Lanus - calle los nogales 5438</ul> 
 
           <li>Interior Del Pais</li>
-                <ul>Santa fe Capital- calle :  provincinini   4523</ul> 
+                <ul><FaStore/>  Santa fe Capital- calle :  provincinini   4523</ul> 
           <li>Proximamente</li>
-                <ul>Sucursal Plaza de Mayo</ul> 
-                <ul>Sucursal Bahia blanca</ul> 
+                <ul><FaStore/>  Sucursal Plaza de Mayo</ul> 
+                <ul><FaStore/>  Sucursal Bahia blanca</ul> 
         </ul>
       </div>
     </div>
