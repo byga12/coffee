@@ -2,10 +2,13 @@ import React from 'react';
 import s from "../About/About.module.css";
 import l from "./Contact.module.css"
 import { FaFacebook,FaInstagram,FaTwitterSquare } from "react-icons/fa";
+import photo from '../../../assets/granos-de-cafe-1.jpg'
+import Title from '../../Title/Title';
 
 
 const Contact = () => {
   return <div>
+    <Title imageUrl={photo} titleText='Franquicias'/>
         <div className={s.container}>
       <div className={s.aboutus}>
         <section className={s.first_section}>
