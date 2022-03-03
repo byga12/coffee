@@ -24,7 +24,7 @@ const ProductCard = ({ name, imageUrl, description, ingredients, price }) => {
             component="img"
             sx={{ height: "140px" }}
             image={imageUrl}
-            alt="green iguana"
+            alt="coffee"
           />
           <CardContent>
             <h2

@@ -36,8 +36,6 @@ const links = [
     name: "Franquicias",
     path: "/franchises",
   },
-
-
 ];
 
 const Header = () => {
@@ -51,7 +49,13 @@ const Header = () => {
   };
 
   return (
-    <AppBar sx={{ background: "#DFD2C6", position: "relative" }}>
+    <AppBar
+      sx={{
+        background: "#DFD2C6",
+        position: "relative",
+        scrollSnapAlign: "start",
+      }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <img src={logo} height="90px" alt="logo"></img>
@@ -86,7 +90,11 @@ const Header = () => {
             >
               {links.map((link) => (
                 <MenuItem key={link.name} onClick={handleCloseNavMenu}>
-                  <Typography sx={{ color: "#8E7560" }} textAlign="center" href={link.path}>
+                  <Typography
+                    sx={{ color: "#8E7560" }}
+                    textAlign="center"
+                    href={link.path}
+                  >
                     {link.name}
                   </Typography>
                 </MenuItem>
@@ -100,8 +108,7 @@ const Header = () => {
                 key={link.name}
                 href={link.path}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "#8E7560", display: "block" }
-                }
+                sx={{ my: 2, color: "#8E7560", display: "block" }}
               >
                 {link.name}
               </Button>

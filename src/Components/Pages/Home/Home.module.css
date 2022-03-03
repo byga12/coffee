@@ -1,6 +1,11 @@
+html {
+  scroll-snap-type: y mandatory;
+}
+
 /* HERO */
 
 .hero {
+  scroll-snap-align: start;
   height: 100vh;
   position: relative;
   display: flex;
@@ -31,6 +36,9 @@
   margin: 0 auto;
 }
 
+.container > * {
+  scroll-snap-align: start;
+}
 /* OUR COFFEES */
 
 .coffees {
