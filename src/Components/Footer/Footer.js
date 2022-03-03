@@ -27,7 +27,7 @@ export default function Footer() {
         px: 2,
         mt: "auto",
         backgroundColor: "#DFD2C6",
-        scrollSnapAlign: "start",
+        // scrollSnapAlign: "start",
       }}
     >
       <Container maxWidth="sm" className={s.container} sx={{ display: "flex" }}>

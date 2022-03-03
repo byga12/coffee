@@ -53,7 +53,7 @@ const Header = () => {
       sx={{
         background: "#DFD2C6",
         position: "relative",
-        scrollSnapAlign: "start",
+        // scrollSnapAlign: "start",
       }}
     >
       <Container maxWidth="xl">
