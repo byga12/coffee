@@ -6,6 +6,7 @@ html {
 
 .hero {
   scroll-snap-align: start;
+  scroll-margin-top: 200px;
   height: 100vh;
   position: relative;
   display: flex;
@@ -99,6 +100,7 @@ html {
 
 .stores {
   min-height: 100vh;
+  scroll-margin-bottom: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
