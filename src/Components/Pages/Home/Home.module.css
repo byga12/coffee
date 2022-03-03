@@ -113,3 +113,23 @@ html {
   font-weight: 400;
   color: #46382e;
 }
+
+@media (max-width: 900px) {
+  .story {
+    grid-template-columns: 1fr;
+  }
+  .franchise {
+    grid-template-columns: 1fr;
+  }
+  .franchise_button_container {
+    order: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .container > * {
+    min-height: 400px;
+    margin-block: 3rem;
+    grid-gap: 1rem;
+  }
+}

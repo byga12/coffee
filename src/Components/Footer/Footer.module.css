@@ -1,6 +1,16 @@
-.container {
-  display: flex;
-  justify-content: space-between;
+.footer_description {
+  display: grid;
+  grid-template-columns: 1fr 0.6fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.footer_logo_container img {
+  max-width: 100%;
+}
+
+.container > * {
+  margin-block: 1rem;
 }
 
 .container ul {

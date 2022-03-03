@@ -38,7 +38,7 @@ const Home = () => {
           </div>
         </section>
         <section className={s.franchise}>
-          <div>
+          <div className={s.franchise_button_container}>
             <Button
               text={"Conoce nuestras instalaciones"}
               href={"/franchises"}
