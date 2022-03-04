@@ -100,7 +100,7 @@ html {
 
 .stores {
   min-height: 100vh;
-  scroll-margin-bottom: 200px;
+  scroll-margin-bottom: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
