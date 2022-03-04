@@ -3,3 +3,30 @@
     grid-template-columns: 50% 50%;
 
 }
+.foto{
+    height: 100%;
+    width: 100%;
+}
+
+.Ctexto{
+    margin: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    padding: 20%;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    
+}
+
+.texto{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 1.3rem
+    
+}

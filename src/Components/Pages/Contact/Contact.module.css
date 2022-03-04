@@ -3,10 +3,13 @@
     padding: 8%;
     border-radius: 5%;
     
-   
 }
 
 
 .icons {
     height: 20vh;
+    width: 5vh;
+    padding: 30%;
+   color: black
+   
   }
