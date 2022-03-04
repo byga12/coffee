@@ -1,3 +1,12 @@
 .container{
     background-color: #DFD2C6;
+    padding: 8%;
+    border-radius: 5%;
+    
+   
 }
+
+
+.icons {
+    height: 20vh;
+  }
