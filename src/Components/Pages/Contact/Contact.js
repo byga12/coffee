@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import s from "../About/About.module.css";
 import l from "./Contact.module.css"
 import { FaFacebook,FaInstagram,FaTwitterSquare } from "react-icons/fa";
@@ -6,11 +6,24 @@ import photo from '../../../assets/granos-de-cafe-1.jpg'
 import Title from '../../Title/Title';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-import { Button } from '@mui/material';
+import { Button,ToggleButton  } from '@mui/material';
+import Swal from "sweetalert2";
 
 
 
 const Contact = () => {
+  const [from, setFrom] = useState({})
+
+
+   function onClick() {
+     Swal.fire('Enviado!',
+     'Muchas gracias',
+     'success')
+     }
+
+
+
+
   return( <div>
     <Title imageUrl={photo} titleText='Franquicias'/>
         <div className={s.container}>
@@ -67,22 +80,29 @@ const Contact = () => {
               <TextField fullWidth label="Email" id="fullWidth"  variant="filled"/>
             </Box>
 
-            <Button variant="contained" sx={{color:'white', background:'black', position: 'relative', left: '80%'}} >Enviar</Button>
+            <Button variant="contained" sx={{color:'white', background:'black', position: 'relative', left: '80%'}} onClick={onClick} >Enviar</Button>
         </div>
 
         <h1>Redes</h1> 
         <Box sx={{ width: 1 }}>
           <Box display="grid" gridTemplateColumns="repeat(12, 1fr)" gap={2}>
+            <Box gridColumn="span 4" >
+                <a  className={l.link} rel="noreferrer" target= '_blank' href='https://www.facebook.com/marketplace/110905088931384/?hoisted_items=459774549151389'>
+                <FaFacebook className={l.icons} />
+                </a>
+            </Box>
+            <Box gridColumn="span 4">
+                <a   rel="noreferrer" target= '_blank' href='https://www.instagram.com/niniolobo/'>
+                <FaInstagram className={l.icons} />
+                    </a>
+                  
+            </Box>
             <Box gridColumn="span 4">
            
-                <FaFacebook className={l.icons} />
-               
-            </Box>
-            <Box gridColumn="span 4">
-                <FaInstagram className={l.icons} />
-            </Box>
-            <Box gridColumn="span 4">
-                  <FaTwitterSquare className={l.icons}/>
+            <a  rel="noreferrer" target= '_blank' href='https://twitter.com/etherealdior/status/1499701186575884293/photo/1'>
+            <FaTwitterSquare className={l.icons}/>
+            </a>
+            
             </Box>
             
           </Box>
