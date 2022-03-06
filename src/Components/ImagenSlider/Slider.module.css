@@ -12,7 +12,9 @@
 }
 
 .image {
-  width: 1000px;
+  max-width: 100%;
+  object-fit: cover;
+  /* width: 1000px; */
   height: 600px;
   border-radius: 10px;
 }
