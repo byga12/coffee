@@ -52,7 +52,10 @@ export default function Footer() {
           </div>
           <ul>
             <li>
-              <Link to="/store">Sucursales</Link>
+              <Link to="/stores">Sucursales</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contacto</Link>
             </li>
             <li>
               <Link to="/franchises">Franquicias</Link>

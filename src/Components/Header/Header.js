@@ -1,4 +1,4 @@
-import * as React from "react";
+import { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -10,6 +10,8 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import logo from "./../../assets/devffee_logo.png";
+import { Link } from "react-router-dom";
+import s from "./Header.module.css";
 
 const links = [
   {
@@ -26,7 +28,7 @@ const links = [
   },
   {
     name: "Sucursales",
-    path: "/store",
+    path: "/stores",
   },
   {
     name: "Contacto",
@@ -39,7 +41,7 @@ const links = [
 ];
 
 const Header = () => {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElNav, setAnchorElNav] = useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -53,7 +55,6 @@ const Header = () => {
       sx={{
         background: "#DFD2C6",
         position: "relative",
-        // scrollSnapAlign: "start",
       }}
     >
       <Container maxWidth="xl">
@@ -90,12 +91,10 @@ const Header = () => {
             >
               {links.map((link) => (
                 <MenuItem key={link.name} onClick={handleCloseNavMenu}>
-                  <Typography
-                    sx={{ color: "#8E7560" }}
-                    textAlign="center"
-                    href={link.path}
-                  >
-                    {link.name}
+                  <Typography sx={{ color: "#8E7560" }} textAlign="center">
+                    <Link className={s.link} to={link.path}>
+                      {link.name}
+                    </Link>
                   </Typography>
                 </MenuItem>
               ))}

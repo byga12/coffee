@@ -39,7 +39,7 @@ const ImagenSlider = ({ slides }) => {
             >
               {index === current && (
                 <>
-                  <h1 >{slide.name}</h1>
+                  <h1>{slide.name}</h1>
                   <img
                     src={slide.image}
                     alt={slide.id}

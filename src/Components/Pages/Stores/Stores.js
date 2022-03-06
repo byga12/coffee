@@ -6,14 +6,14 @@ import { SliderData } from "../../ImagenSlider/SliderData";
 import s from "../About/About.module.css";
 import { FaStore } from "react-icons/fa";
 
-const Sucursales = () => {
+const Stores = () => {
   return (
     <div>
       <Title imageUrl={photo} titleText="Sucursales" />
-      <div style={{ marginTop: "4rem" }}>
-        <ImagenSlider slides={SliderData}></ImagenSlider>
-      </div>
       <div className={s.container}>
+        <div style={{ marginBlock: "4rem" }}>
+          <ImagenSlider slides={SliderData}></ImagenSlider>
+        </div>
         <div className={s.aboutus}>
           <section className={s.first_section}>
             <h1>Lugares:</h1>
@@ -21,35 +21,35 @@ const Sucursales = () => {
           <ul>
             <li>CABA </li>
             <ul>
-              <FaStore /> Obeliso - calle : le noris 4394
+              <FaStore /> Obelisco - Calle: Le Noris 4394
             </ul>
             <ul>
-              <FaStore /> Floresta - calle: Hector ludeña 023
+              <FaStore /> Floresta - Calle: Hector Ludeña 1023
             </ul>
             <ul>
-              <FaStore /> Caballito - calle los nogales 5438
+              <FaStore /> Caballito - Calle: Los Nogales 5438
             </ul>
             <li>Buenos Aires</li>
             <ul>
-              <FaStore /> Mar Del Plata - Calle : le noris 4394
+              <FaStore /> Mar Del Plata - Calle: Le Noris 4394
             </ul>
             <ul>
-              <FaStore /> Lomas de Zamora - calle: Hector ludeña 023
+              <FaStore /> Lomas de Zamora - Calle: Hector Ludeña 1023
             </ul>
             <ul>
-              <FaStore /> Lanus - calle los nogales 5438
+              <FaStore /> Lanús - Calle: Los Nogales 5438
             </ul>
 
-            <li>Interior Del Pais</li>
+            <li>Interior del país</li>
             <ul>
-              <FaStore /> Santa fe Capital- calle : provincinini 4523
+              <FaStore /> Santa Fe capital - Calle : Provincini 4523
             </ul>
-            <li>Proximamente</li>
+            <li>Próximamente</li>
             <ul>
               <FaStore /> Sucursal Plaza de Mayo
             </ul>
             <ul>
-              <FaStore /> Sucursal Bahia blanca
+              <FaStore /> Sucursal Bahía Blanca
             </ul>
           </ul>
         </div>
@@ -58,4 +58,4 @@ const Sucursales = () => {
   );
 };
 
-export default Sucursales;
+export default Stores;
