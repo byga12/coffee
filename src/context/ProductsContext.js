@@ -8,7 +8,7 @@ const ProductsContextData = ({ children }) => {
 
   useEffect(() => {
     try {
-      axios.get("http://localhost:5000/coffees/").then((res) => {
+      axios.get("https://devffee-backend.herokuapp.com/coffees").then((res) => {
         setProducts(res.data);
       });
     } catch (e) {
