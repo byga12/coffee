@@ -18,3 +18,12 @@
   margin: 0;
   padding: 0;
 }
+
+.container ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.container ul li a:visited {
+  color: black;
+}
