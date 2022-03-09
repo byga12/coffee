@@ -11,3 +11,10 @@
 .container > * {
   padding: 2rem;
 }
+
+@media (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
