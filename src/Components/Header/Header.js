@@ -3,7 +3,6 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
@@ -91,11 +90,9 @@ const Header = () => {
             >
               {links.map((link) => (
                 <MenuItem key={link.name} onClick={handleCloseNavMenu}>
-                  <Typography sx={{ color: "#8E7560" }} textAlign="center">
-                    <Link className={s.link} to={link.path}>
-                      {link.name}
-                    </Link>
-                  </Typography>
+                  <Link className={s.link} to={link.path}>
+                    {link.name}
+                  </Link>
                 </MenuItem>
               ))}
             </Menu>

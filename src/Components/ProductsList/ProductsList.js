@@ -8,7 +8,7 @@ const ProductsList = () => {
   const { products } = useContext(ProductsContext);
 
   return (
-    <div className={s.grid_container}>
+    <div className={s.flex_container}>
       {products.length > 0 &&
         products.map((product) => (
           <ProductCard
