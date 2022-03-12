@@ -6,7 +6,6 @@ import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import logo from "./../../assets/devffee_logo.png";
 import { Link } from "react-router-dom";
@@ -100,14 +99,15 @@ const Header = () => {
 
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {links.map((link) => (
-              <Button
+              <Link
+                className={s.linkButton}
                 key={link.name}
-                href={link.path}
+                to={link.path}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "#8E7560", display: "block" }}
-              >
+                style={{ my: 2, color: "#8E7560", display: "block" }}
+              >  
                 {link.name}
-              </Button>
+              </Link>
             ))}
           </Box>
         </Toolbar>
