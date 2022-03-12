@@ -11,7 +11,7 @@ const Title = ({
   titleMuiVariant = "h2",
   imageUrl,
   bckgColor = "#D2BFAF",
-  bckgOpacity = "0.3",
+  bckgOpacity = "0.4",
   titlePadding = "6rem",
 }) => {
   const containerStyles = {
