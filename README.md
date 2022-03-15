@@ -2,7 +2,8 @@
 
 This is an app for a fictional coffee shop created by Gabriel Shimabuku and Pablo Vieyra (https://github.com/byga12 https://github.com/pabloVieyra).
 
-### App: https://devffee.vercel.app/
+### Live app: https://devffee.vercel.app/
+### Figma: https://www.figma.com/file/AcV3eHOa7qfZYIM5Nt9isQ/Devfee?node-id=0%3A1
 
 ## Technologies
 The following technologies were used in this project:
