@@ -3,7 +3,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { Link } from "react-router-dom";
 import s from "./Footer.module.css";
-import logo from "../../assets/devffee_logo.png";
+import logo from "../../assets/devffee_logo.webp";
 
 function Copyright() {
   return (

@@ -1,7 +1,7 @@
 import s from "../About/About.module.css";
 import l from "./Contact.module.css";
 import { FaFacebook, FaInstagram, FaTwitterSquare } from "react-icons/fa";
-import photo from "../../../assets/granos-de-cafe-1.jpg";
+import photo from "../../../assets/granos-de-cafe-1.webp";
 import Title from "../../Title/Title";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";

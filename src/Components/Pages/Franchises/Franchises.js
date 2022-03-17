@@ -1,11 +1,11 @@
 import React from "react";
 import Title from "../../Title/Title";
-import photo from "../../../assets/granos-de-cafe-1.jpg";
+import photo from "../../../assets/granos-de-cafe-1.webp";
 import s from "./Franchises.module.css";
-import foto1 from "../../../assets/foto1.jpg";
-import foto2 from "../../../assets/foto2.jpg";
-import foto3 from "../../../assets/foto3.jpg";
-import foto4 from "../../../assets/foto4.jpg";
+import foto1 from "../../../assets/foto1.webp";
+import foto2 from "../../../assets/foto2.webp";
+import foto3 from "../../../assets/foto3.webp";
+import foto4 from "../../../assets/foto4.webp";
 
 const Franchises = () => {
   return (
