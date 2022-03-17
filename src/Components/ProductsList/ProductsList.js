@@ -7,9 +7,12 @@ import { ProductsContext } from "../../context/ProductsContext";
 const ProductsList = () => {
   const { products } = useContext(ProductsContext);
 
+
+
+
   return (
     <div className={s.flex_container}>
-      {products.length > 0 &&
+      {products.length !== 0 ?
         products.map((product) => (
           <ProductCard
             key={product._id}
@@ -19,7 +22,7 @@ const ProductsList = () => {
             price={product.price}
             ingredients={product.ingredients}
           />
-        ))}
+        )) : <div>Obteniendo productos...</div>}
     </div>
   );
 };

@@ -22,7 +22,8 @@ const ProductCard = ({ name, imageUrl, description, ingredients, price }) => {
         <CardActionArea>
           <CardMedia
             component="img"
-            sx={{ height: "140px" }}
+            width={200}
+            height={140}
             image={imageUrl}
             alt="coffee"
           />
@@ -58,7 +59,7 @@ const ProductCard = ({ name, imageUrl, description, ingredients, price }) => {
       >
         <div className={s.modal}>
           <div className={s.modal_img_container}>
-            <img className={s.modal_img} src={imageUrl} alt="" />
+            <img className={s.modal_img} src={imageUrl} alt="" width={188} height={350} />
           </div>
           <div className={s.modal_content}>
             <h3>{name}</h3>

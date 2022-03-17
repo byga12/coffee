@@ -48,7 +48,7 @@ export default function Footer() {
             </li>
           </ul>
           <div className={s.footer_logo_container}>
-            <img src={logo} alt="logo" />
+            <img src={logo} alt="logo" width={127} height={105}/>
           </div>
           <ul>
             <li>
