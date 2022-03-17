@@ -3,7 +3,7 @@ import ProductsListWithSorting from "../../ProductsListWithSorting/ProductsListW
 // import s from "./Products.module.css";
 import { ProductsContextData } from "../../../context/ProductsContext";
 import Title from '../../Title/Title';
-import photo from '../../../assets/granos-de-cafe-1.jpg'
+import photo from '../../../assets/granos-de-cafe-1.webp'
 
 
 const Products = ({ title, description, ingredients }) => {

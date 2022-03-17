@@ -1,10 +1,10 @@
 import s from "./Home.module.css";
 import Button from "../../Button/Button";
 import LeafletMap from "../../LeafletMap/LeafletMap";
-import hero from "./../../../assets/hero.png";
-import coffees from "./../../../assets/coffees.png";
-import story from "./../../../assets/story.png";
-import franchise from "./../../../assets/franchise.png";
+import hero from "./../../../assets/hero.webp";
+import coffees from "./../../../assets/coffees.webp";
+import story from "./../../../assets/story.webp";
+import franchise from "./../../../assets/franchise.webp";
 
 const Home = () => {
   return (

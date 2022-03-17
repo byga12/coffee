@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "../../Title/Title";
-import photo from "../../../assets/granos-de-cafe-1.jpg";
+import photo from "../../../assets/granos-de-cafe-1.webp";
 import ImagenSlider from "../../ImagenSlider/ImagenSlider";
 import { SliderData } from "../../ImagenSlider/SliderData";
 import s from "../About/About.module.css";

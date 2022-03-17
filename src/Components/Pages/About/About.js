@@ -1,8 +1,8 @@
 import Button from "../../Button/Button";
 import s from "./About.module.css";
-import logo from "./../../../assets/devffee_logo.png";
+import logo from "./../../../assets/devffee_logo.webp";
 import Title from '../../Title/Title';
-import photo from '../../../assets/granos-de-cafe-1.jpg'
+import photo from '../../../assets/granos-de-cafe-1.webp'
 
 const About = () => {
   return (<div>
