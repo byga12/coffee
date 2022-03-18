@@ -1,3 +1,4 @@
+import React from "react";
 import s from "../About/About.module.css";
 import l from "./Contact.module.css";
 import { FaFacebook, FaInstagram, FaTwitterSquare } from "react-icons/fa";
@@ -6,13 +7,10 @@ import Title from "../../Title/Title";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import { Button } from "@mui/material";
-import Swal from "sweetalert2";
+
 
 const Contact = () => {
-  function onClick() {
-    Swal.fire("Enviado!", "Muchas gracias", "success");
-  }
-
+ 
   return (
     <div>
       <Title imageUrl={photo} titleText="Contacto" />
@@ -24,13 +22,14 @@ const Contact = () => {
             También podés llamarnos sin cargo al 0800-999-3000 o escribirnos un
             mail a sugerencias@devffee.com.ar
           </section>
-          <div className={l.container}>
+          <form className={l.container}>
             <p>Motivo de contacto</p>
             <Box>
               <TextField
                 label="Motivo de Contacto"
                 variant="filled"
                 sx={{ width: "100%" }}
+                required={true}
               />
             </Box>
             <p>Mensaje</p>
@@ -39,6 +38,8 @@ const Contact = () => {
                 label="Mensaje"
                 variant="filled"
                 sx={{ width: "100%" }}
+                required={true}
+                
               />
             </Box>
             <p>Nombre y apellido</p>
@@ -47,6 +48,7 @@ const Contact = () => {
                 label="Nombre y apellido"
                 variant="filled"
                 sx={{ width: "100%" }}
+                required={true}
               />
             </Box>
             <p>Telefono</p>
@@ -55,6 +57,8 @@ const Contact = () => {
                 label="Telefono"
                 variant="filled"
                 sx={{ width: "100%" }}
+                type='number'
+                required={true}
               />
             </Box>
             <p>Email</p>
@@ -63,6 +67,9 @@ const Contact = () => {
                 label="Email"
                 variant="filled"
                 sx={{ width: "100%" }}
+                required={true}
+                type='email'
+                
               />
             </Box>
 
@@ -80,12 +87,13 @@ const Contact = () => {
                   color: "white",
                   background: "black",
                 }}
-                onClick={onClick}
+                
+                type='submit'
               >
                 Enviar
               </Button>
             </div>
-          </div>
+          </form >
 
           <h1>Redes</h1>
           <Box sx={{ width: 1 }}>
